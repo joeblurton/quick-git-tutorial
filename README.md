@@ -32,7 +32,7 @@ Using your terminal, `cd` into a safe, user-controlled directory on your compute
 git clone https://github.com/joeblurton/quick-git-tutorial
 ```
 
-If you have configured git correctly, this will now proceed to clone, and after this is completed you will be able to enter the tutorial directory by typing `cd`. 
+If you have configured git correctly, this will now proceed to clone, and after this is completed you will be able to enter the tutorial directory by typing `cd quick-git-tutorial`. 
 
 You can verify that you have cloned the correct files by using `ls` on Mac/Linux or `DIR` on Windows. The list of files and folders created by these commands should match the corresponding list for this repository on GitHub.
 
