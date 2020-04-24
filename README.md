@@ -202,11 +202,9 @@ Line Three
 
 Below the editor, add a commit message to say that you've used the English words for the numbers and then press the *"Commit changes"* button. 
 
-You have now done a totally sensible thing and translated those pesky numerals to English in your master branch.
+You have now done a totally sensible thing and translated those pesky numerals to English in your master branch. Normally, you wouldn't be doing this in GitHub, but it demonstrates what happens when the remote master changes.
 
 Go to the local repository in your terminal, where you should be on the master branch. You can confirm this by using `git branch`
-
-//You can check if this change is available by using `git fetch`
 
 The following command will pull the changes down from the remote repository:
 
