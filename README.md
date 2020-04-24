@@ -16,7 +16,7 @@ _Please feel free to submit PRs to improve and expand on this guide._
 
 Please install git and ensure you are able to access it through the CLI/Command Prompt on your local machine. [This Atlassian tutorial](https://www.atlassian.com/git/tutorials/install-git) will guide you through the install process. 
 
-Though these steps would be similar with BitBucket or any other hosted Git service, you will also need a GitHub account.
+Though these steps would be similar with BitBucket or any other hosted Git service, you will also need a GitHub account, with [the correct SSH keys to enable you to contact GitHub from your terminal](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
 
 
@@ -26,9 +26,13 @@ In order to work through the tutorial, we will want a basic structure. You have 
 
 ### 1. via the command line (preferred)
 
-Using your terminal, `cd` into a safe, user-controlled directory on your computer. Run the following command in your terminal:  `git clone https://github.com/joeblurton/quick-git-tutorial`
+Using your terminal, `cd` into a safe, user-controlled directory on your computer. Run the following command in your terminal: 
 
-If you have configured git correctly, this will now proceed to clone, and after this is completed you will be able to enter the tutorial directory by typing `cd`. 
+```
+git clone https://github.com/joeblurton/quick-git-tutorial
+```
+
+If you have configured git correctly, this will now proceed to clone, and after this is completed you will be able to enter the tutorial directory by typing `cd quick-git-tutorial`. 
 
 You can verify that you have cloned the correct files by using `ls` on Mac/Linux or `DIR` on Windows. The list of files and folders created by these commands should match the corresponding list for this repository on GitHub.
 
@@ -44,7 +48,9 @@ Create a new repository on GitHub, naming it `quick-git-tutorial-test`.
 
 In the cloned tutorial directory, change the remote repository using this pattern, **remembering to change your username in the URL**:
 
-`git remote set-url origin https://github.com/your-username/quick-git-tutorial-test`
+```
+git remote set-url origin https://github.com/your-username/quick-git-tutorial-test
+```
 
 
 
@@ -60,13 +66,23 @@ Line 3
 
 Git is used to track and manage changes in your files. It is already aware of this particular change, but you will need to *commit* this change in order for it to be added to version control.
 
-You can do this by running the command `git add counting.txt`. This adds the file to a kind of queued collection. You can also use an interactive mode to add multiple files using `git add -i`.
+You can do this by running this command:
+
+```
+git add counting.txt
+```
+
+This adds the file to a kind of queued collection. You can also use an interactive mode to add multiple files using `git add -i`.
 
 Next we need to commit the change. For this, we need to include a "commit message". This allows other developers to understand what you intended, but it will also help you to understand your past decisions in the future. 
 
 _To be at all useful, a commit message should be as short as possible, but also as descriptive as possible._
 
-Commit `counting.txt` like so: `git commit -m 'Added line list: counting.txt'` 
+Commit `counting.txt` like so: 
+
+```
+git commit -m "Added line list: counting.txt"
+```
 
 
 
@@ -172,7 +188,7 @@ git checkout master
 
 ## Pull
 
-Go to your GitHub repository using your browser. Click on `counting.txt` and then click the little edit button towards the top right of the source.
+Go to your newly-created GitHub repository using your browser. Click on `counting.txt` and then click the little edit button towards the top right of the source.
 
 Change the text as follows:
 
@@ -255,3 +271,5 @@ git branch -d french
 There is so much more to git, and you may want to explore the documentation for the `git stash` and `git rebase` commands in particular. Most teams will require you to submit pull requests before making changes to remote repositories, and there is a [handy tutorial for that here](https://yangsu.github.io/pull-request-tutorial/). 
 
 But if you follow the workflow outlined here, you will be up and running as a basic git user and your life just might get a little easier too!
+
+You can see a completed example of this tutorial here: https://github.com/joeblurton/quick-git-tutorial-test/ (there's not much to it!)
