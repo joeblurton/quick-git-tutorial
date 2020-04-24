@@ -66,7 +66,7 @@ Line 3
 
 Git is used to track and manage changes in your files. It is already aware of this particular change, but you will need to *commit* this change in order for it to be added to version control.
 
-You can do this by running this command:
+You can start by running this command:
 
 ```
 git add counting.txt
