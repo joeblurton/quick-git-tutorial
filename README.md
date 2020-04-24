@@ -26,7 +26,11 @@ In order to work through the tutorial, we will want a basic structure. You have 
 
 ### 1. via the command line (preferred)
 
-Using your terminal, `cd` into a safe, user-controlled directory on your computer. Run the following command in your terminal:  `git clone https://github.com/joeblurton/quick-git-tutorial`
+Using your terminal, `cd` into a safe, user-controlled directory on your computer. Run the following command in your terminal: 
+
+```
+git clone https://github.com/joeblurton/quick-git-tutorial
+```
 
 If you have configured git correctly, this will now proceed to clone, and after this is completed you will be able to enter the tutorial directory by typing `cd`. 
 
