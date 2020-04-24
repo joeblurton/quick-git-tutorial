@@ -127,6 +127,8 @@ So we've made changes to the local git repository, but for the purposes of this 
 git push
 ```
 
+Depending on your setup, may have to authenticate GitHub at this point.
+
 
 
 ## Branch
@@ -202,9 +204,9 @@ Below the editor, add a commit message to say that you've used the English words
 
 You have now done a totally sensible thing and translated those pesky numerals to English in your master branch.
 
-Go to the local repository in your terminal, where you should be on the master branch. You can confirm this by using `git branch`.
+Go to the local repository in your terminal, where you should be on the master branch. You can confirm this by using `git branch`
 
-You can check if this change is available by using `git fetch`.
+//You can check if this change is available by using `git fetch`
 
 The following command will pull the changes down from the remote repository:
 
