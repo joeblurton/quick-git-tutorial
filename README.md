@@ -1,4 +1,4 @@
-# A quick git useage tutorial for beginners
+# A quick git usage tutorial for beginners
 
 Git is an incredibly powerful and complex tool that can be intimidating for new users.  You will make mistakes as you learn, but don't worry - that's an essential part of the development journey. 
 
